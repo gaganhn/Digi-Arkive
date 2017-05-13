@@ -1,3 +1,10 @@
+/*login page overide css*/
+.logo {
+	height: 87px;
+    margin-top: -32px;
+}
+
+
 .navbar-default {
     background-color: #FFF;
     border-color: #CCC;
