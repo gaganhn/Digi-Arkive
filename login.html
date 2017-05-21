@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-/*img { transition: all infinite ease-in-out 0s; 
-
-}
-img:hover
-{
-    cursor: default;
-    transform: rotate(360deg);
-    transition: all 3s ;
-}*/
-img{ 
-    -moz-animation:.6s rotateRight infinite linear; 
-    -webkit-animation:.6s rotateRight infinite linear; 
-}
-@-moz-keyframes rotateRight{
-    0%{ -moz-transform:rotate(0deg); -moz-transform-origin:50% 50%; }
-    100%{ -moz-transform:rotate(360deg); }
-}
-
-@-webkit-keyframes rotateRight{
-    0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:50% 50%; }
-    100%{ -webkit-transform:rotate(360deg); }
-}
-
-</style>
+    <!-- <style>
+    img {
+        -moz-animation: 1s rotateRight infinite linear;
+        -webkit-animation: 1s rotateRight infinite linear;
+        animation: 1s rotateRight infinite linear;
+    }
+    
+    @-moz-keyframes rotateRight {
+        0% {
+            -moz-transform: rotate(0deg);
+            -moz-transform-origin: 50% 50%;
+        }
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+    }
+    
+    @-webkit-keyframes rotateRight {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -webkit-transform-origin: 50% 50%;
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    </style> -->
+    <style>
+    /* Absolute Center Spinner */
+    
+    .loading {
+        position: fixed;
+        z-index: 999;
+        height: 2em;
+        width: 2em;
+        overflow: show;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    /* Transparent Overlay */
+    
+    .loading:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    /*.loading:not(:required) {
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+    }*/
+    </style>
 </head>
+
 <body>
-
-
-<img src="DIGILOGO.png" alt="Mountain View" style="width:304px;height:228px;">
-
+    <!-- <div>
+        <img src="./img/DIGILOGO.png" alt="DIGI LOGO" style="width:304px;height:228px;">
+    </div> -->
+    <div class="loading">
+    	<img src="./img/logo loader.gif" alt="DIGI LOGO" style="width:304px;height:228px;">
+    </div>
 </body>
+
 </html>
