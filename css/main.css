@@ -5,6 +5,21 @@
     margin-top: -30px;
 }
 
+.close {
+    float: right;
+    font-size: 78px;
+    margin-top: -1%;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 1;
+}
+.modal {
+    overflow: hidden;
+}
+
 button.ghost-button-rounded-corners {
     background-color: rgba(255, 255, 255, 0);
     display: inline-block;
